@@ -1,6 +1,7 @@
-= BigTable TestContainer
+= Alxndria TestContainer
 
-This module is all about providing a convenient testcontainer for bigtable. Fortunately, Google provides a Google Cloud SDK implementation for a BigTable (in-memory) emulator, and a Docker image for running Google Cloud SDK commands.
+This module is all about providing a convenient testcontainer for alxndria.
+Internally using the in-memory emulator for alxndria
 
 == Usage
 
@@ -11,10 +12,10 @@ NOTE: The below snippet will spin up a single container for the whole test class
 [source,kotlin]
 ----
 @Testcontainers
-internal class BigTableContainerTest {
+internal class AlxndriaContainerTest {
 
     companion object {
-        @Container private val bigTable = BigTableContainer()
+        @Container private val alxndria = AlxndriaContainer()
     }
 
     ...
