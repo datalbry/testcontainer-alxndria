@@ -48,6 +48,7 @@ configure<PublishingExtension> {
                 }
             }
             pom {
+                artifactId = "testcontainers-${project.name}"
                 name.set("Alxndria Emulator Testcontainer")
                 description.set("In-memory emulator for the alxndria platform")
                 url.set("https://github.com/datalbry/testcontainer-alxndria")
